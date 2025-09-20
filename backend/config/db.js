@@ -6,7 +6,7 @@ dotenv.config()
 const mongo_url = process.env.MONGO_URI
 
 const conn = () =>{
-mongoose.connect(mongo_url).then(() => {
+return mongoose.connect(mongo_url).then(() => {
     console.log("mongoose connected")
 }).catch((err) => {
     console.log("mongoose not connected", err)

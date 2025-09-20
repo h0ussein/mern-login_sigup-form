@@ -1,4 +1,8 @@
 import joi from "joi";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 
 const signupValidation = (req, res, next) => {
   const schema = joi.object({
